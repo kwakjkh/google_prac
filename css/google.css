@@ -76,8 +76,89 @@ nav a img{
     display: flex;
     justify-content: space-between;
 }
+.plus ul li{
+    position: relative;
+}
 .plus ul li a{
     width: 90px;
+    align-items: center;
+    position: relative;
+    /* flex */
     display: flex;
     flex-direction: column;
+    padding: 10px;
+}
+.plus ul li:hover .hover_bg{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+.plus ul li:hover .hover_bg img{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+/* 네이버 이미지 */
+.bg{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    position: relative;
+}
+.plus ul li a img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.plus ul li{
+    position: relative;
+}
+/* 호버했을때 이미지 */
+.hover_bg{
+
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 110px;
+height: 107px;
+background-color: rgba(0, 0, 0, 0.2);
+opacity: 0;
+}
+.hover_bg img{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    opacity: 0;
+}
+.plus ul li >a > span{
+    font-size: 14px;
+    /* 말줄임 표시 */
+    line-height: 17px;
+    white-space: nowrap; /*줄 바꿈 방지*/
+    overflow: hidden; /*줄 바꿈 방지*/
+    text-overflow: ellipsis; /* 넘치는 글자는 ...처리 */
+    max-width: 80px;
+}
+/* 버튼 */
+.main_wrap button{
+    border: none;
+    height: 30px;
+    /* border: 0; */
+    padding: 0 15px;
+    margin: 20px 3px;
+    background-color: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    color: #666;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.main_wrap button:hover{
+    border: 1px solid #ccc;
+    color: #333;
+    background: linear-gradient(#fff 0%, #f6f6f6 47%, #ededed 100%);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
 }
