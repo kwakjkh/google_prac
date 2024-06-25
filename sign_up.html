@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    
     <div class="wrap">
         <h3>회원가입</h3>
         <ul class="list">
@@ -28,11 +29,11 @@
                 <input type="password" placeholder="비밀번호 확인">
             </li>
         </ul>
-        <button class="sign">
+        <button type="submit" class="sign" onclick="alert('회원가입이 완료 되었습니다. 로그인 페이지로 이동하시겠습니까?')">
             <a href="#">가입하기</a>
         </button>
-        <button class="notice">
-            <a href="notice.html">공지 창 열기</a>
+        <button class="notice" onclick="window.open('notice.html')">
+            <a href="#">공지 창 열기</a>
         </button>
     </div>
 </body>

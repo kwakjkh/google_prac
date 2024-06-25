@@ -16,6 +16,7 @@ a{
     margin: 80px auto;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
+
 .wrap h3{
     text-align: center;
 }
@@ -43,12 +44,20 @@ a{
 .sign a{
     color: white;
 }
+.sign:hover{
+    background-color: navy;
+    cursor: pointer;
+}
 .notice{
     margin-left: 8px;
     padding: 5px 10px;
     border-radius: 5px;
     background-color: orange;
     border: none;
+}
+.notice:hover{
+    background-color: chocolate;
+    cursor: pointer;
 }
 .notice a{
     color: black;
